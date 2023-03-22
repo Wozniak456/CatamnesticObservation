@@ -54,6 +54,20 @@ body {
     padding: 0 15px;
     box-sizing: content-box; /*padding не входить до загальної ширини*/
 }
+
+._ibg{
+    position: relative;
+}
+
+._ibg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
 /*-----------------------------header---------------------------------------------*/
 .header{
 position: absolute;
@@ -62,6 +76,7 @@ left: 0;
 top:0;
 z-index: 50;
 }
+
 .header__container{
    position: relative;
     display: flex;
@@ -84,6 +99,7 @@ z-index: 50;
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
+    color: #FEFEFE;
 }
 
 nav-item{
@@ -96,12 +112,27 @@ nav-item{
     padding-right: 0%;
     padding-left: 0%;
     padding: 0%;
+    align-items: center;
+    display: flex;
 }
+
 
 .nav-link{
     font-weight: 400;
     font-size: 18px;
     line-height: 130%;
+}
+
+.dropdown-toggle::after {
+    content: url(../img/icons/Arrow-Down.svg);
+    border: 0;
+    padding: 0 0 5px 5px;
+    margin-left: 0;
+    vertical-align: 0;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: #FEFEFE;
 }
 
 .navbar-toggler{
@@ -114,42 +145,7 @@ nav-item{
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-     .navbar-expand-lg .navbar-collapse {
-        display: flex;
-        flex-basis: auto;
-    }   
-    .navbar-toggler{
-        display: none;
-    }
-    
-    .navbar-collapse {
-        width: 85%;
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar-nav{
-        width: 100%;
-        
-        flex-direction: row;
-        margin: 0 auto;
-        box-sizing: content-box;
-        justify-content: center;
-    }
-    
-    .menu__link, .nav-link{
-        font-size: 16px;
-    }
 
-    .header__logo{
-        margin-right: 30px;
-    }
-
-    .menu__item{
-        margin-right: 30px;
-    }
-    
-  }
 
 .navbar-collapse {
     flex-grow:initial; 
@@ -202,3 +198,111 @@ nav-item{
 .footer{
 
 }
+
+.main-block{
+    position: relative;
+}
+
+.main-block__body{
+    padding: 258px 0 278px 0;
+    width: 620px;
+}
+
+.main-block__title{
+    font-weight: 400;
+    font-size: 56px;
+    line-height: 130%;
+    color: #FEFEFE;
+    margin-bottom: 25px;
+}
+.main-block__text{
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FEFEFE;
+    margin-bottom: 40px;
+}
+
+d-block{
+    min-height: 900px;
+}
+
+.carousel{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    min-height: 900px;
+    top: 0;
+    left: 0;
+}
+.main-block__button{
+    background: #53A800;
+    width: 242px;
+    min-height: 63px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #FEFEFE;  
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-expand-lg .navbar-collapse {
+       display: flex;
+       flex-basis: auto;
+   }   
+   .navbar-toggler{
+       display: none;
+   }
+   
+   .navbar-collapse {
+       width: 85%;
+       display: flex;
+       flex-direction: row;
+   }
+   .navbar-nav{
+       width: 100%;
+       flex-direction: row;
+       margin: 0 auto;
+       box-sizing: content-box;
+       justify-content: center;
+   }
+   
+   .menu__link, .nav-link{
+       font-size: 16px;
+   }
+
+   .header__logo{
+       margin-right: 30px;
+   }
+
+   .menu__item{
+       margin-right: 30px;
+   }
+   .main-block__title{
+       font-size: 36px;
+       margin-bottom: 18px;
+   }
+   .main-block__text{
+       font-size: 14px;
+       margin-bottom: 28px;
+   }
+   .main-block__body{
+    width: 418px;
+    padding: 212px 0 278px 0;
+    
+    }
+    .header__container{
+        min-height: 100px;
+    }
+
+    .main-block__button{
+        width: 220px;
+        min-height: 61px;
+        font-size: 14px;
+    }
+ }
