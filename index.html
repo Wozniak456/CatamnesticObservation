@@ -15,10 +15,10 @@
             <div class="header__container _container">
                 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: transparent;">
                     <div class="container-fluid">
-                        <div class="header-logo-div">
+                        <a href="#" class="header-logo-div">
                             <img class="header__logo" src="img/icons/home.svg" alt="logo">
-                        </div> 
-                        <button style="background:hotpink;" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        </a> 
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>
                             <img class="menu-img" src="img/icons/menu-open.svg" alt="menu-open" srcset="">
                         </span>
@@ -26,22 +26,25 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Послуги</a>
+                                    <a href="#" class="menu__link active-menu-link">Головна</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Лікарі</a>
+                                    <a href="pages/services.html" class="menu__link">Послуги</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Новини</a>
+                                    <a href="pages/doctors.html" class="menu__link">Лікарі</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Вакансії</a>
+                                    <a href="pages/news.html" class="menu__link">Новини</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Про нас</a>
+                                    <a href="pages/vacancies.html" class="menu__link">Вакансії</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link">Контакти</a>
+                                    <a href="pages/about.html" class="menu__link">Про нас</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="pages/contacts.html" class="menu__link">Контакти</a>
                                 </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">UKR</a>
@@ -58,73 +61,237 @@
                     </div>
                 </nav>
             </div>
-            <!-- <div class="header__container _container">
-                <a href="#" class="header__logo">logo</a>
-                <nav class="header__menu menu">
-                    <ul class="menu__list ">
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Послуги</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Лікарі</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Новини</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Вакансії</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Про нас</a>
-                        </li>
-                        <li class="menu__item">
-                            <a href="#" class="menu__link">Контакти</a>
-                        </li>
-                        <li class="menu__item">
-                            <div class="menu__language">UKR</div>
-                        </li>
-                    </ul>
-                    
-                </nav>
-            </div> -->
         </header>
-
 
 
         <main class="page">
             <div class="page__main-block main-block">
                 <div class="main-block__container _container">
                     <div class="main-block__body">
+                        <img src="img/icons/arrow.svg" alt="arrow" class="main-block__arrow">
                         <h1 class="main-block__title">Гармонійний розвиток – здорове майбутнє</h1>
                         <div class="main-block__text">Прогресивні медичні клініки, де на першому місці - турбота про пацієнта, а лікування та обстеження проходить відповідно до найсучасніших світових протоколів і стандартів.</div>
+                        
                         <div class="main-block__buttons">
-                            <a href="" class="main-block__button">Запис на консультацію</a>
+                            <a href="" class="main-block__button wide-button">Запис на консультацію</a>
                         </div>
+                        
                     </div>
                 </div>
-                <!-- <div class="main-block__image">
-                    <img src="img/cover_img.jpg" alt="cover" class="ibg">
-                </div> -->
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"  data-bs-pause="false">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="img/cover_img.jpg" class="d-block w-100" alt="...">
+                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="img/cover_img.jpg" class="d-block w-100" alt="...">
+                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
                       </div>
                       <div class="carousel-item">
-                        <img src="img/cover_img.jpg" class="d-block w-100" alt="...">
+                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
                       </div>
                     </div>
                   </div>
             </div>
+
+
+            <div class="page__main-block-directions main-block-directions">
+                <div class="main-block-directions__container _container">
+                    <div class="main-block-directions__body">
+                        <div class="directions-text-row">
+                            <h1 class="main-directions">Основні напрямки</h1>
+                            <a class="learn-more">Дізнатись більше</a>
+                        </div>
+                        <div class="directions-items">
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">КАТАМНЕСТИЧНЕ СПОСТЕРЕЖЕННЯ</h1>
+                                <p class="direction-item-text">Заходи, спрямовані на профілактику, раннє виявлення, корекцію порушень розвитку дітей від народження до 3-х років включно та підтримку законних представників таких дітей.</p>
+                                <a href="#" class="direction-item-ref">Дізнатися більше</a>
+                            </div>
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">КОНСУЛЬТАЦІЯ ТА ДІАГНОСТИКА</h1>
+                                <p class="direction-item-text">Об’єктивне обстеження, оцінка фізичного розвитку, неврологічний огляд, оцінка психо-моторного розвитку, оцінювання особливостей та адекватності харчування.</p>
+                                <a href="#" class="direction-item-ref">Дізнатися більше</a>
+                            </div>
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">ВПО</h1>
+                                <p class="direction-item-text">Лікування, реабілітація та психологічна підтримка дітей внутрішньо-переміщених осіб (ВПО), та родин з тимчасово окупованих територій.</p>
+                                <a href="#" class="direction-item-ref">Дізнатись більше</a>
+                            </div>
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">СКРИНІНГ ДІТЕЙ</h1>
+                                <p class="direction-item-text">Скринінг дітей включає такі тести: Бейлі III, INFANIB, TIMP, AIMS, HINE, TIME, M-CHAT, СХОР. </p>
+                                <a href="#" class="direction-item-ref">Дізнатись більше</a>
+                            </div>
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">ІНДИВІДУАЛЬНІ ПЛАНИ СПОСТЕРЕЖЕННЯ</h1>
+                                <p class="direction-item-text">Амбулаторно-консультативний прийом вузькопрофільними спеціалістами (педіатром, неонатологом, неврологом, пульмонологом, хірургом, офтальмологом, психологом.</p>
+                                <a href="#" class="direction-item-ref">Дізнатись більше</a>
+                            </div>
+                            <div class="directions-item">
+                                <h1 class="direction-item-title">ПРОФІЛАКТИКА</h1>
+                                <p class="direction-item-text">Профілактика гострих та хронічних захворювань, оцінка дотримання календаря імунізації, здійснення реабілітаційних заходів на ранніх етапах</p>
+                                <a href="#" class="direction-item-ref">Дізнатись більше</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block-diagnostic__body">
+                        <div class="diagnostic-img">
+                            <img src="img/content-img/diagnostic_img.jpg" alt="diagnostic img">
+                        </div>
+                        <div class="main-block-diagnostic__content">
+                            <div class="main-block-diagnostic__content-container">
+                                <div class="diagnostic-text-content">
+                                    <h1 class="diagnostic-title">Kатамнестичне спостереження</h1>
+                                    <p class="diagnostic-text">Мета роботи кабінету - спостереження за дітьми перших трьох років, 
+                                        які потребують реабілітаційних заходів на ранніх етапах. Кабінет оснащений спеціальними тренажерами та обладнанням, що допомагають виявляти патології в діток на ранньому етапі.</p>
+                                </div>                            
+                                <a href="#" class="main-block__button wide-button">Запис на консультацію</a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block-services__body">
+                        <div class="directions-text-row">
+                            <h1 class="main-directions">Послуги</h1>
+                            <a class="learn-more">Дізнатись більше</a>
+                        </div>
+                        <div class="services-items">
+                            <div class="services-item">
+                                <h1 class="service-item-title">КОНСУЛЬТАЦІЇ</h1>
+                                <p class="service-item-text">Можливі консульації у педіатра-неонатолога, педіатра, невролога дитячого, пульмонолога, хірурга дитячого</p>
+                                <p class="service-item-price">Від 800 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="services-item">
+                                <h1 class="service-item-title">РАННЄ ВТРУЧАННЯ</h1>
+                                <p class="service-item-text">Включає в себе масаж, плавання, фітболтерапія з фізичним терапевтом, заняття з логопедом, навчання батьків</p>
+                                <p class="service-item-price">Від 1000 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="services-item">
+                                <h1 class="service-item-title">МЕДИЧНЕ ОБСТЕЖЕННЯ ДІТЕЙ</h1>
+                                <p class="service-item-text">Включає об'єктивне обстеження, оцінювання фізичного розвитку, неврологічний огляд, оцінювання харчування</p>
+                                <p class="service-item-price">Від 600 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="services-item">
+                                <h1 class="service-item-title">СКРИНІНГ ДІТЕЙ З ГРУПИ РИЗИКУ</h1>
+                                <p class="service-item-text">Включає такі тести: Бейлі III, INFANIB, TIMP, AIMS, HINE, TIME, M-CHAT, СХОР</p>
+                                <p class="service-item-price">Від 1500 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="services-item">
+                                <h1 class="service-item-title">РОЗРОБКА ІНДИВІДУАЛЬНИХ ПЛАНІВ СПОСТЕРЕЖЕННЯ</h1>
+                                <p class="service-item-text">Амбулаторно-консультативний прийом вузькопрофільними спеціалістами та іншими за потребою</p>
+                                <p class="service-item-price">Від 2000 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="services-item">
+                                <h1 class="service-item-title">ПРОФІЛАКТИЧНІ ЗАХОДИ</h1>
+                                <p class="service-item-text">Включає оцінку дотримання календаря імунізації, навчання батьків, здійснення реабілітаційних заходів</p>
+                                <p class="service-item-price">Від 600 грн</p>
+                                <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
+                            </div>
+                            <div class="service-img">
+                                <img src="img/content-img/service-img.jpg" alt="service image">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-block-activities__body">
+                        <div class="directions-text-row">
+                            <h1 class="main-directions">Заходи</h1>
+                            <a class="learn-more">Дізнатись більше</a>
+                        </div>
+                        <div class="activities-items">
+                            <div class="activities-item-1">
+                                <p class="activities-item-text">
+                                    Для спеціалістів
+                                </p>
+                                <a href="#" class="activities-item-ref">
+                                    <img class="activities-item-arrow" src="img/icons/activities-arrow.svg" alt="activities-arrow">
+                                </a>
+                            </div>
+                            <div class="activities-item-2">
+                                <div class="activities-item-text">
+                                    Для батьків
+                                </div>
+                                <a href="#" class="activities-item-ref">
+                                    <img class="activities-item-arrow" src="img/icons/activities-arrow.svg" alt="activities-arrow">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
 
-
         <footer class="footer">
-
+            <div class="footer__container _container">
+                <div class="footer__container-body">
+                    <div class="footer-logo-div">
+                        <img class="footer__logo" src="img/icons/home.svg" alt="logo">
+                    </div> 
+                    <div class="footer-social">
+                        <p class="phone-num">+38 (098) 845 70 83</p>
+                        <p class="web-site">catamnes.com.ua</p>
+                        <div class="social-links">
+                            <a href="#" class="social-links-facebook"></a>
+                            <a href="#" class="social-links-telegram"></a>
+                            <a href="#" class="social-links-instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footer-address">
+                        <div class="address-value">м. Київ, вул. Платона Майбороди, 8.</div>
+                        <div class="opening-hours">Щоденно з 8:00 до 19:00</div>
+                    </div>
+                    <div class="footer-links">
+                        <a href="" class="info-for-pacient">Правова інформація для пацієнта</a>
+                        <a href="" class="partners">Партнери</a>
+                    </div>
+                </div>
+                <div class="footer__container-body-tab">
+                    <div class="footer-logo-div">
+                        <img class="footer__logo" src="img/icons/home.svg" alt="logo">
+                    </div> 
+                    <div class="footer-social">
+                        <p class="phone-num">+38 (098) 845 70 83</p>
+                        <p class="web-site">catamnes.com.ua</p>
+                        <div class="social-links">
+                            <a href="#" class="social-links-facebook"></a>
+                            <a href="#" class="social-links-telegram"></a>
+                            <a href="#" class="social-links-instagram"></a>
+                        </div>
+                    </div>
+                    <div class="footer-address">
+                        <div class="address-value">м. Київ, вул. Платона Майбороди, 8.</div>
+                        <a href="" class="info-for-pacient">Правова інформація для пацієнта</a>
+                        <a href="" class="partners">Партнери</a>
+                    </div>
+                    
+                </div>
+                <div class="footer__container-body-phone">
+                    <div class="footer-logo-div">
+                        <img class="footer__logo" src="img/icons/home.svg" alt="logo">
+                        <div class="social-links">
+                            <a href="#" class="social-links-facebook"></a>
+                            <a href="#" class="social-links-telegram"></a>
+                            <a href="#" class="social-links-instagram"></a>
+                        </div>
+                    </div> 
+                    <div class="footer-info">
+                        <p class="phone-num">+38 (098) 845 70 83</p>
+                        <p class="web-site">catamnes.com.ua</p>
+                        <div class="address-value">м. Київ, вул.Платона Майбороди, 8.</div>
+                        <div class="footer-links">
+                            <a href="" class="info-for-pacient">Правова інформація для пацієнта</a>
+                            <a href="" class="partners">Партнери</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
