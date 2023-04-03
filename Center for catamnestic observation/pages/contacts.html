@@ -20,7 +20,7 @@
                         </a> 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>
-                            <img class="menu-img" src="../img/icons/menu-open-black.svg" alt="menu-open" srcset="">
+                            <img class="menu-img-black" src="../img/icons/menu-open-black.svg" alt="menu-open" srcset="">
                         </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,7 +44,7 @@
                                     <a href="about.html" class="menu__link-not-main">Про нас</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link-not-main active-menu-link">Контакти</a>
+                                    <a href="contacts.html" class="menu__link-not-main active-menu-link">Контакти</a>
                                 </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link-not-main dropdown-toggle-not-main" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">UKR</a>
@@ -70,15 +70,18 @@
                         <div class="contacts-address-block">
                             <div class="contacts-address-main-block-container">
                                 <div class="contacts-address-main-block">
-                                    <div class="page-title">Завжди раді бачити Вас у нашому центрі</div>
+                                    <div class="page-title centred">Завжди раді бачити Вас у нашому центрі</div>
                                     <div class="contacts-address-text-container">
-                                        <div class="contacts-address-subtitle">Адреса</div>
-                                        <div class="contacts-address-text">м. Київ, вул. Платона Майбороди, 8. <br>
-                                            ДУ «Інститут педіатрії, акушерства та гінекології імені академіка О.М. Лук’янової НАМН України». Лабораторний корпус №3.</div>
-                                        <div class="contacts-address-subtitle">Телефон</div>
-                                        <div class="contacts-address-text">+ 38 (098) 845 70 83</div>
-                                        <div class="contacts-address-subtitle">Пошта</div>
-                                        <div class="contacts-address-text">catamnes.com.ua</div>
+                                        <div class="contacts-address-container">
+                                            <div class="contacts-address-subtitle">Адреса</div>
+                                            <div class="contacts-address-text">м. Київ, вул. Платона Майбороди, 8. <br>ДУ «Інститут педіатрії, акушерства та гінекології імені академіка О.М. Лук’янової НАМН України». Лабораторний корпус №3.</div>
+                                        </div>
+                                        <div class="contacts-tel-email-container">
+                                            <div class="contacts-address-subtitle">Телефон</div>
+                                            <div class="contacts-address-text">+ 38 (098) 845 70 83</div>
+                                            <div class="contacts-address-subtitle">Пошта</div>
+                                            <div class="contacts-address-text">catamnes.com.ua</div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -89,12 +92,14 @@
                         <div class="contacts-feedback-block">
                             <div class="contacts-feedback-form-block">
                                 <div class="page-title">Форма зворотного зв’язку</div>
-                                <form action="" method="POST" class="feedback-form-container">
+                                <form action="#" method="POST" class="contacts-feedback-form-container">
                                     <input class="feedback-form-placeholder-text"  type="text" id="name" name="name" placeholder="Ім’я" required>
                                     <input class="feedback-form-placeholder-text" type="tel" id="phone" name="phone" placeholder="Телефон" required>
                                     <div class="feedback-form-verification">
-                                        <div class="feedback-form-data-processing">Натискаючи кнопку, Ви даєте свою згоду на обробку персональних даних</div>
-                                        <button type="submit" class="main-block__button wide-button">Відправити</button>
+                                        <div class="feedback-form-data-processing-limit">
+                                            <div class="feedback-form-data-processing">Натискаючи кнопку, Ви даєте свою згоду на обробку персональних даних</div>
+                                        </div>
+                                        <button type="submit" class="feedback-form-button wide-button">Відправити</button>
                                     </div>
                                 </form>
                             </div>
@@ -110,7 +115,6 @@
                 </div>
             </div>
         </main>
-
 
         <footer class="footer">
             <div class="footer__container _container">
@@ -181,7 +185,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
 

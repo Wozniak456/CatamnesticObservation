@@ -20,13 +20,13 @@
                         </a> 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>
-                            <img class="menu-img" src="img/icons/menu-open.svg" alt="menu-open" srcset="">
+                            <img src="img/icons/menu-img-white.svg" class="menu-img">
                         </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav">
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link active-menu-link">Головна</a>
+                                    <a href="index.html" class="menu__link active-menu-link">Головна</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="pages/services.html" class="menu__link">Послуги</a>
@@ -51,18 +51,14 @@
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="#">UKR</a></li>
                                 <li><a class="dropdown-item" href="#">ENG</a></li>
-                                
                                 </ul>
                             </li>
-                            
                             </ul>
-                            
                         </div>
                     </div>
                 </nav>
             </div>
         </header>
-
 
         <main class="page">
             <div class="page__main-block main-block">
@@ -73,7 +69,7 @@
                         <div class="main-block__text">Прогресивні медичні клініки, де на першому місці - турбота про пацієнта, а лікування та обстеження проходить відповідно до найсучасніших світових протоколів і стандартів.</div>
                         
                         <div class="main-block__buttons">
-                            <a href="" class="main-block__button wide-button">Запис на консультацію</a>
+                            <a class="main-block__button wide-button"">Запис на консультацію</a>
                         </div>
                         
                     </div>
@@ -81,13 +77,13 @@
                 <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel"  data-bs-pause="false">
                     <div class="carousel-inner">
                       <div class="carousel-item active">
-                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
+                        <img src="img/content-img/main/cover_img.jpg" class="d-block w-100 " alt="cover_img">
                       </div>
                       <div class="carousel-item">
-                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
+                        <img src="img/content-img/main/cover_img.jpg" class="d-block w-100 " alt="cover_img">
                       </div>
                       <div class="carousel-item">
-                        <img src="img/cover_img.jpg" class="d-block w-100 " alt="...">
+                        <img src="img/content-img/main/cover_img.jpg" class="d-block w-100 " alt="cover_img">
                       </div>
                     </div>
                   </div>
@@ -136,7 +132,7 @@
                     </div>
                     <div class="main-block-diagnostic__body">
                         <div class="diagnostic-img">
-                            <img src="img/content-img/diagnostic_img.jpg" alt="diagnostic img">
+                            <img src="img/content-img/main/diagnostic_img.jpg" alt="diagnostic img">
                         </div>
                         <div class="main-block-diagnostic__content">
                             <div class="main-block-diagnostic__content-container">
@@ -145,8 +141,8 @@
                                     <p class="diagnostic-text">Мета роботи кабінету - спостереження за дітьми перших трьох років, 
                                         які потребують реабілітаційних заходів на ранніх етапах. Кабінет оснащений спеціальними тренажерами та обладнанням, що допомагають виявляти патології в діток на ранньому етапі.</p>
                                 </div>                            
-                                <a href="#" class="main-block__button wide-button">Запис на консультацію</a>
-                                
+                                <a class="main-block__button wide-button">Запис на консультацію</a>
+                                <img class="diagnostic-arrow" src="img/icons/diagnostic-arrow.svg" alt="">
                             </div>
                         </div>
                     </div>
@@ -193,7 +189,7 @@
                                 <a href="#" class="activity-link"> <img src="img/icons/activities-arrow.svg" alt="arrow"> </a>
                             </div>
                             <div class="service-img">
-                                <img src="img/content-img/service-img.jpg" alt="service image">
+                                <img src="img/content-img/main/service-img.jpg" alt="service image">
                             </div>
                         </div>
                     </div>
@@ -221,10 +217,22 @@
                             </div>
                         </div>
                     </div>
+                    <div class="feedback-form-block" id="myModal">
+                        <form action="#" method="POST" class="feedback-form-container">
+                            <span class="close-btn">
+                                <img class="close-btn-img" src="img/icons/close-btn-cross.png" alt="cross">
+                                <!-- <img class="close-btn-circle" src="img/icons/close-btn-circle.png" alt="circle"> -->
+                            </span>
+                            <div class="page-title centred">Форма зворотного зв’язку</div>
+                            <input class="feedback-form-placeholder-text"  type="text" id="name" name="name" placeholder="Ім’я" required>
+                            <input class="feedback-form-placeholder-text" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                            <div class="feedback-modal-form-data-processing modal_form">Натискаючи кнопку, Ви даєте свою згоду на обробку персональних даних</div>
+                            <button type="submit" class="feedback-form-button modal_form" id="launch-btn">Відправити</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </main>
-
 
         <footer class="footer">
             <div class="footer__container _container">
@@ -293,8 +301,9 @@
                 
             </div>
         </footer>
+
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

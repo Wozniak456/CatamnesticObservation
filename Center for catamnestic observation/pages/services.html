@@ -20,7 +20,7 @@
                         </a> 
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span>
-                            <img class="menu-img" src="../img/icons/menu-open-black.svg" alt="menu-open" srcset="">
+                            <img src="../img/icons/menu-open-black.svg" class="menu-img-black">
                         </span>
                         </button>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -29,7 +29,7 @@
                                     <a href="../index.html" class="menu__link-not-main">Головна</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a href="#" class="menu__link-not-main active-menu-link">Послуги</a>
+                                    <a href="services.html" class="menu__link-not-main active-menu-link">Послуги</a>
                                 </li>
                                 <li class="menu__item">
                                     <a href="doctors.html" class="menu__link-not-main">Лікарі</a>
@@ -281,8 +281,18 @@
                             </div>
                         </div>
                         <div class="consultation-button">
-                            <a href="" class="main-block__button wide-button">Запис на консультацію</a>
+                            <a class="main-block__button wide-button">Запис на консультацію</a>
                         </div>
+                    </div>
+                    <div class="feedback-form-block" id="myModal">
+                        <form action="#" method="POST" class="feedback-form-container">
+                            <span class="close-btn"><img class="close-btn-img" src="../img/icons/close-btn-cross.png" alt="cross"></span>
+                            <div class="page-title centred">Форма зворотного зв’язку</div>
+                            <input class="feedback-form-placeholder-text"  type="text" id="name" name="name" placeholder="Ім’я" required>
+                            <input class="feedback-form-placeholder-text" type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                            <div class="feedback-modal-form-data-processing modal_form">Натискаючи кнопку, Ви даєте свою згоду на обробку персональних даних</div>
+                            <button type="submit" class="feedback-form-button modal_form" id="launch-btn">Відправити</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -358,7 +368,7 @@
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src=""></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>
 
